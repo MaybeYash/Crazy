@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #0c0c36; /* Background color */
+    background-color: #A67C00; /* Space gold background color */
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
@@ -15,11 +15,11 @@ body {
 .play-now-button {
     background-color: #131339; /* Inner background color */
     color: #ffffff;
-    font-size: 20px;
+    font-size: 24px; /* Larger font size */
     font-weight: bold;
-    padding: 20px 50px;
+    padding: 25px 60px; /* Larger padding for a bigger button */
     border: 3px solid #1a1a40; /* First dark border */
-    border-radius: 40px; /* Rounded borders */
+    border-radius: 50px; /* Rounded borders */
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -36,7 +36,7 @@ body {
     height: 200%;
     background: linear-gradient(45deg, rgba(0, 212, 255, 0.8), rgba(9, 9, 121, 0.8), rgba(0, 0, 255, 0.8)); /* Outer lighter border gradient */
     transition: all 0.4s;
-    border-radius: 45px; /* Outer border radius */
+    border-radius: 55px; /* Outer border radius */
     z-index: -2;
 }
 
@@ -55,7 +55,7 @@ body {
     right: 4px;
     bottom: 4px;
     background: #131339; /* Inner background */
-    border-radius: 36px;
+    border-radius: 46px;
     z-index: -1;
 }
 
