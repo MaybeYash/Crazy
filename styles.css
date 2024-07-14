@@ -17,13 +17,14 @@ body {
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
-    padding: 15px 30px;
-    border: 2px solid transparent;
+    padding: 20px 50px;
+    border: 3px solid #1a1a40; /* First dark border */
     border-radius: 40px; /* Rounded borders */
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+    transition: all 0.4s;
 }
 
 .play-now-button::before {
@@ -33,10 +34,10 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg, rgba(0, 212, 255, 1), rgba(9, 9, 121, 1), rgba(0, 0, 255, 1));
+    background: linear-gradient(45deg, rgba(0, 212, 255, 0.8), rgba(9, 9, 121, 0.8), rgba(0, 0, 255, 0.8)); /* Outer lighter border gradient */
     transition: all 0.4s;
-    border-radius: 40px;
-    z-index: -1;
+    border-radius: 45px; /* Outer border radius */
+    z-index: -2;
 }
 
 .play-now-button:hover::before {
@@ -49,11 +50,11 @@ body {
 .play-now-button::after {
     content: '';
     position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    background: #131339;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background: #131339; /* Inner background */
     border-radius: 36px;
     z-index: -1;
 }
